@@ -204,9 +204,11 @@ body {
     transform: rotate(45deg);
   }
 
+  
+
   #välj-taxi {
     position: absolute;
-    bottom: 40px;
+    bottom: 40px ;
     left: 32.5%;
     width: 35%;
     height: 90px;

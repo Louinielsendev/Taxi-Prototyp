@@ -5,6 +5,23 @@ function init(){
     document.querySelector('#name').innerHTML = ' ' + sessionStorage.getItem('name')
     document.querySelector('#price').innerHTML = ' ' + sessionStorage.getItem('price')
     document.querySelector('#paymethod').innerHTML = ' ' + sessionStorage.getItem('betalningsmetod')
+    let addonsOutput = ''
+    let baggage = sessionStorage.getItem('baggage')
+    console.log(baggage)
+    if (baggage === 'true'){
+        
+        
+        addonsOutput += ' Baggage'
+    }
+    if (sessionStorage.getItem('djur') === 'true'){
+        addonsOutput += ' Djur'
+    }
+    if (sessionStorage.getItem('bilbarnstol') === 'true'){
+        addonsOutput += ' Bilbarnstol'
+    }
+    
+    
+    document.querySelector('#add-ons').innerHTML = addonsOutput
     let departure = document.querySelector('#depart')
     let waitingTime = sessionStorage.getItem('waitingTime')
     if (sessionStorage.getItem('time') === 'Res nu'){
@@ -12,7 +29,7 @@ function init(){
         d2 = new Date ( d1 );
         if (waitingTime > 0){
             d2.setMinutes ( d1.getMinutes() + parseInt(waitingTime));
-            console.log(d2)
+            
         }
         departure.innerHTML = ' ' + d2.getHours() + ':' + (d2.getMinutes()<10?'0':'') + d2.getMinutes()
     }

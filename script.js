@@ -55,10 +55,12 @@ function showAddOns() {
     content.style.maxHeight = null;
     content.style.margin = '50px 0 0 0';
     img.src = 'img/plus.svg'
+    
   } else {
     content.style.maxHeight = content.scrollHeight + "px";
     content.style.margin = '50px 0 50px 0';
     img.src = 'img/minus.svg'
+     
   }
 }
 

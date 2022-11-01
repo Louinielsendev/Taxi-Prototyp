@@ -14,16 +14,17 @@
     <div id="screenWrapper">
         <a href="index.html" id="back"><img src="img/arrow-left.svg" alt=""></a>
         <div class="wrapper">
+            <form id="taxi" action="taxibolag.html">
             <div class="input-wrapper">
                 <div>
                     <p>Från</p>
-                    <input type="text" id="start-input" value="">
+                    <input type="text" id="start-input" value="" required>
                 </div>
             </div>
             <div class="input-wrapper">
                 <div>
                     <p>Till</p>
-                    <input id="destination-input" type="text" value="">
+                    <input id="destination-input" type="text" value="" required>
                 </div>
             </div>
             <div class="input-wrapper">
@@ -92,18 +93,19 @@
             <div class="input-wrapper">
                 <div>
                     <p>Namn</p>
-                    <input id="name-input" type="text">
+                    <input id="name-input" type="text" required>
                 </div>
             </div>
             <div class="input-wrapper">
                 <div>
                     <p>Nummer</p>
-                    <input id="number-input" type="text">
+                    <input id="number-input" type="text" required>
                 </div>
             </div>
-
+            
+            </form>
         </div>
-        <a href="taxibolag.html"><button id="välj-taxi">Välj Taxibolag</button></a>
+        <input  type="submit" name="" form="taxi" id="välj-taxi" value="Välj Taxibolag">
     </div>
 </body>
 
