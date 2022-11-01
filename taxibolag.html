@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Taxi</title>
+    <script src="script2.js"></script>
+</head>
+
+<body>
+    <div id="screenWrapper">
+        <a href="page2.html" id="back"><img src="img/arrow-left.svg" alt=""></a>
+        <p id="taxibolag">Välj Taxibolag</p>
+        <div class="wrapper2">
+            <div class="head-wrapper">
+                <div>
+                    <p>Taxibolag</p>
+                </div>
+                <div>
+                    <p>Väntetid (min)</p>
+                    <p>Pris</p>
+                </div>
+            </div>
+            <hr>
+            <div class="taxi-wrapper"><div class="taxi-name">
+                    <img src="img/martin.png" alt="">
+                    <h2>Martins Taxi</h2>
+                </div>
+                <div>
+                    <h3 class="time">5</h3>
+                    <h3 class="price">200 kr</h3>
+                </div>
+            </div>
+            <div class="taxi-wrapper"><div class="taxi-name">
+                    <img src="img/city.png" alt="">
+                    <h2>City taxi</h2>
+                </div>
+                <div>
+                    <h3 class="time">20</h3>
+                    <h3 class="price"> 400 kr</h3>
+                </div>
+            </div>
+            <div class="taxi-wrapper"><div class="taxi-name">
+                    <img src="img/stefan.png" alt="">
+                    <h2>Stefans snabba taxi</h2>
+                </div>
+                <div>
+                    <h3 class="time">0</h3>
+                    <h3 class="price">230 kr</h3>
+                </div>
+            </div>
+            
+        </div>
+        <div id="exit">
+            
+        </div>
+        <div class="wrapper3">
+            <img id="close-pop" src="img/x.png" alt="">
+            <div id="chosed-company">
+                <img src="img/martin.png" alt="">
+                <h1>Martins Taxi</h1>
+            </div>
+            <div id="travel-information">
+                <h2>Från: <span id="location">Din position</span> </h2>
+                <h2>Till: <span id="destination">Stallvägen 44</span> </h2>
+                <h2>Tid: <span id="time"></span> </h2>
+                <h2>Pris: <span id="price">200kr</span> </h2>
+            </div>
+            <div id="pay-method">
+                <div>
+                    <label for="swish">Swish</label>
+                <input class="radioBtn" type="radio" id="swish" value="Swish" name="betalning" checked="checked">
+                </div>
+                <div>
+                    <label for="kortbetalning">Kortbetalning</label>
+                    <input class="radioBtn" type="radio" id="kortbetalning" value="Kortbetalning" name="betalning">
+                </div>
+                <div>
+                    <label for="plats">Betala på plats</label>
+                <input class="radioBtn" type="radio" id="plats" value="Betala på plats" name="betalning">
+                </div>
+                
+            </div>
+            <a href="bekräftelse.html"><button id="välj-taxi">Boka</button></a>
+        </div>
+    </div>
+</body>
+
+</html>

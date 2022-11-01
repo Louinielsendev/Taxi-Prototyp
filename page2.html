@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Taxi</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div id="screenWrapper">
+        <a href="index.html" id="back"><img src="img/arrow-left.svg" alt=""></a>
+        <div class="wrapper">
+            <div class="input-wrapper">
+                <div>
+                    <p>Från</p>
+                    <input type="text" id="start-input" value="">
+                </div>
+            </div>
+            <div class="input-wrapper">
+                <div>
+                    <p>Till</p>
+                    <input id="destination-input" type="text" value="">
+                </div>
+            </div>
+            <div class="input-wrapper">
+                <div>
+                    <p>Tid</p>
+                    <select name="time" id="time">
+                        <option value="Res nu">Res nu</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </div>
+                <div>
+                    <p>Personer</p>
+                    <select name="persons" id="personer">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                </div>
+            </div>
+            <div id="add-ons-button">
+                <p>Tillägg/meddelande</p>
+                <img id="button-img" src="img/plus.svg" alt="">
+            </div>
+            <div id="add-ons-wrapper">
+                <div id="add-ons-check">
+                    <label class="container" for="baggage">Extra baggage
+                        <input type="checkbox" id="baggage" name="baggage" value="baggage">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="container" for="Djur">Djur
+                        <input type="checkbox" id="Djur" name="Djur" value="Djur">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="container" for="Bilbarnstol">Bilbarnstol
+                        <input type="checkbox" id="Bilbarnstol" name="bilbarnstol" value="bilbarnstol">
+                        <span class="checkmark"></span>
+                    </label>
+
+                </div>
+                <div>
+                    <p>Meddelande</p>
+                    <input id="mes-input" type="text">
+                </div>
+            </div>
+            <div class="input-wrapper">
+                <div>
+                    <p>Namn</p>
+                    <input id="name-input" type="text">
+                </div>
+            </div>
+            <div class="input-wrapper">
+                <div>
+                    <p>Nummer</p>
+                    <input id="number-input" type="text">
+                </div>
+            </div>
+
+        </div>
+        <a href="taxibolag.html"><button id="välj-taxi">Välj Taxibolag</button></a>
+    </div>
+</body>
+
+</html>
