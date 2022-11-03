@@ -8,18 +8,27 @@
     <link rel="stylesheet" href="style.css">
     <title>Taxi</title>
     <script src="script3.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAx44xtf58fau8qDMi7x2ZiNW2xj6LoDCw"></script>
+    
 </head>
 
 <body>
     <div id="screenWrapper">
         <div id="indexCover">
+            <h2 id="head">Boka Taxi</h2>
+            <h3 class="headUnder">Snabbt.</h3>
+            <h3 class="headUnder">Smidigt.</h3>
             <div id="destination">
                 <h1>Vart vill du åka?</h1>
-                <div id="textInput">
+                <div>
+                    <div id="textInput">
                     <input id="adressInput" type="text" >
                     <a href="page2.html"><button>Kör</button></a>
                 </div>
+                </div>
+                
             </div>
+            <div id="map"></div>
         </div>
     </div>
 </body>

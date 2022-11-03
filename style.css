@@ -29,13 +29,31 @@ body {
 }
 
 #destination {
-    margin: 60% auto 0 auto;
+    margin: 90px auto 0 auto;
     width: 70%;
 }
 
 #destination h1 {
     font-size: 2.2em;
     margin-bottom: 5px;
+}
+
+#head, .headUnder {
+
+    width: 70%;
+    margin: 0 auto 0 auto;
+}
+
+#head {
+    margin-top: 100px;
+    font-weight: 800;
+    font-size: 9em;
+}
+
+.headUnder{
+    margin-top: -30px;
+    font-size:7em ;
+    font-weight: 800;
 }
 
 #textInput {
@@ -60,6 +78,14 @@ body {
     height: 100%;
     width: 10%;
     font-size: 30px;
+}
+
+#map{
+    position: absolute;
+    margin-top: 64px;
+    height: 600px;
+    width: 100%;
+    
 }
 
 /* second page*/

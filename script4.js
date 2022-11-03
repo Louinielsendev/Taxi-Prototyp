@@ -31,7 +31,7 @@ function init(){
             d2.setMinutes ( d1.getMinutes() + parseInt(waitingTime));
             
         }
-        departure.innerHTML = ' ' + d2.getHours() + ':' + (d2.getMinutes()<10?'0':'') + d2.getMinutes()
+        departure.innerHTML = ' ' + (d2.getHours()<10?'0':'') + d2.getHours() + ':' + (d2.getMinutes()<10?'0':'') + d2.getMinutes()
     }
     else {
         time = sessionStorage.getItem('time')
@@ -51,10 +51,10 @@ function init(){
             d2.setMinutes ( d1.getMinutes() + parseInt(waitingTime));
             console.log(d2)
         }
-        departure.innerHTML = ' ' + d2.getHours() + ':' + (d2.getMinutes()<10?'0':'') + d2.getMinutes()
+        departure.innerHTML = ' ' + (d2.getHours()<10?'0':'') + d2.getHours() + ':' + (d2.getMinutes()<10?'0':'') + d2.getMinutes()
         }
         else {
-            departure.innerHTML = ' ' + chosenTime.getHours() + ':' + (chosenTime.getMinutes()<10?'0':'') + chosenTime.getMinutes()
+            departure.innerHTML = ' ' + (chosenTime.getHours()<10?'0':'') + chosenTime.getHours() + ':' + (chosenTime.getMinutes()<10?'0':'') + chosenTime.getMinutes()
         }
     }
     

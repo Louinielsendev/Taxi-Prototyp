@@ -38,7 +38,7 @@ function init() {
     newDateObj.setTime(newDateObj.getTime() + (15 * 60 * 1000));
     var time = 1000 * 60 * 5;
     newDateObj = new Date(Math.round(newDateObj.getTime() / time) * time);
-    let roundedTime = newDateObj.getHours() + ':' + (newDateObj.getMinutes()<10?'0':'') + newDateObj.getMinutes() 
+    let roundedTime = (newDateObj.getHours()<10?'0':'') + newDateObj.getHours() + ':' + (newDateObj.getMinutes()<10?'0':'') + newDateObj.getMinutes() 
 
     timeOptions[i].value = roundedTime;
     timeOptions[i].innerHTML = roundedTime;
