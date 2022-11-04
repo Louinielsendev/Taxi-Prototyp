@@ -72,7 +72,7 @@ function hideMarkers() {
 function getAdress(lat, lng) {
 
 	let request = new XMLHttpRequest(); // Object för Ajax-anropet
-	request.open("GET", "https://api.positionstack.com/v1/reverse?access_key=8d0c94662b432799b80e393e1b1de914&query="+lat+","+lng+"", true);
+	request.open("GET", "http://api.positionstack.com/v1/reverse?access_key=8d0c94662b432799b80e393e1b1de914&query="+lat+","+lng+"", true);
 	request.send(null); // Skicka begäran till servern
 	request.onreadystatechange = function () { // Funktion för att avläsa status i kommunikationen
 		if (request.readyState == 4)
