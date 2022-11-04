@@ -72,7 +72,7 @@ function saveData(){
   sessionStorage.setItem('message', mes.value)
   sessionStorage.setItem('name', fullName.value)
   sessionStorage.setItem('number',number.value)
-  sessionStorage.setItem('baggage', baggage.checked)
+  sessionStorage.setItem('bagage', baggage.checked)
   sessionStorage.setItem('djur', djur.checked)
   sessionStorage.setItem('bilbarnstol', bilbarnstol.checked)
 }
