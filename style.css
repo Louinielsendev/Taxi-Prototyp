@@ -29,7 +29,8 @@ body {
 }
 
 #destination {
-    margin: 90px auto 0 auto;
+
+    margin: 220px auto 0 auto;
     width: 70%;
 }
 
@@ -52,7 +53,7 @@ body {
 
 .headUnder{
     margin-top: -30px;
-    font-size:7em ;
+    font-size:4em;
     font-weight: 800;
 }
 
@@ -83,7 +84,7 @@ body {
 #map{
     position: absolute;
     margin-top: 64px;
-    height: 600px;
+    height: 634px;
     width: 100%;
     
 }
