@@ -6,7 +6,7 @@ function init(){
 adressInput = document.querySelector('#adressInput');
 goBtn = document.querySelector('#textInput button')
 goBtn.addEventListener('click', nextPage);
-sessionStorage.setItem("location", 'Din postition');
+sessionStorage.setItem("location", 'Din position');
 initMap()
 }
 
